@@ -1,7 +1,7 @@
 #!/bin/bash
 ## +----------------------------------------------------------------------+
-## | Unattended rAthena Installer - Created and Maintained by Ryoma       |
-## | Copyright (C) 2016 - 2020  Ryoma,                     			      |
+## | Unattended rAthena Installer - Created and Maintained by vHost       |
+## | Copyright (C) 2016 - 2020  vHost, https://vhost.rocks                |
 ## |                                                                      |
 ## | This program is free software: you can redistribute it and/or modify |
 ## | it under the terms of the GNU General Public License as published by |
@@ -16,7 +16,7 @@
 ## | You should have received a copy of the GNU General Public License    |
 ## | along with this program.  If not, see <http://www.gnu.org/licenses/>.|
 ## +----------------------------------------------------------------------+
-## | Authors: Machael Gregorio <piratecodes>                              |
+## | Authors: Mike Langford <service@vhost.rocks>                         |
 ## +----------------------------------------------------------------------+
 #
 
@@ -75,7 +75,7 @@ NC='\033[0m'
 # Credentials
 USERID=$(date +%s | sha256sum | base64 | head -c 6 ; echo)
 USERPASS=$(date +%s | sha256sum | base64 | head -c 8 ; echo)
-RATHENAPASS="ryoma2020"
+RATHENAPASS="ch4ngem3"
 DEFSQL="ragnarok"
 RAGSQLPASS=$(date +%s | sha256sum | base64 | head -c 10 ; echo)
 
@@ -84,7 +84,7 @@ URL_RA="https://rathena.org/board"
 URL_RAGIT="https://github.com/rathena/rathena"
 URL_FLUXGIT="https://github.com/rathena/FluxCP"
 URL_CERVANTES_SCRIPTS="https://vhost.rocks/cervantes_scripts"
-URL_FULLCLIENT="https://vhost.rocks/cervantes_scripts/client.zip"
+URL_FULLCLIENT="${URL_CERVANTES_SCRIPTS}/client.zip"
 URL_PHPMYADMIN="https://files.phpmyadmin.net/phpMyAdmin/${VERSION_PMA}/phpMyAdmin-${VERSION_PMA}-all-languages.zip"
 
 ## Packages
